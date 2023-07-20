@@ -6,21 +6,11 @@
  * Return: the absolute value of int
  */
 
-int _abs(int)
+int _abs(int n)
 {
-	if (n > 0)
+	if (n >= 0)
 	{
-		_putchar('+');
-		return (1);
+		return (n);
 	}
-	else if (n == 0)
-	{
-		_putchar(48);
-		return (0);
-	}
-	else if (n < 0)
-	{
-		_putchar('_');
-	}
-	return (-1);
+	return (-n);
 }
